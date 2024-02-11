@@ -14,7 +14,7 @@ export default function left(f: string, a: string, b: string, n: number) {
 
     // Formates the equation
     // (f(x))
-    lengths.push(`(${f.split('x').join(`(${x})`)})`)
+    lengths.push(`(${f.split('x').join('(' + x + ')')})`)
   }
 
   // Solves using the formula: (Delta x) * (f(x1), f(x2), ...)
